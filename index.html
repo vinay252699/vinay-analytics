@@ -184,6 +184,51 @@
                 font-size: 34px;
             }
         }
+        .hero-content {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.eyebrow {
+    font-size: 13px !important;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+    color: #2563eb !important;
+    margin-bottom: 18px !important;
+}
+
+.hero h1 {
+    font-size: 48px;
+    line-height: 1.15;
+    margin-bottom: 25px;
+}
+
+.hero h1 span {
+    color: #2563eb;
+}
+
+.hero-description {
+    max-width: 850px !important;
+    font-size: 19px !important;
+    line-height: 1.7;
+}
+
+.hero-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+}
+
+.secondary-button {
+    background: white;
+    color: #2563eb;
+    border: 1px solid #2563eb;
+}
+
+.secondary-button:hover {
+    background: #eff6ff;
+}
     </style>
 </head>
 
@@ -203,15 +248,35 @@
 
 <section class="hero">
 
-    <h1>Amazon Advertising Data & Analytics</h1>
+    <div class="hero-content">
 
-    <p>
-        Helping Amazon advertisers turn advertising data into
-        actionable business insights through data integration,
-        cloud analytics and interactive business intelligence.
-    </p>
+        <p class="eyebrow">AMAZON ADVERTISING • DATA • BUSINESS INTELLIGENCE</p>
 
-    <a href="#contact" class="button">Discuss Your Analytics Needs</a>
+        <h1>
+            Turn Amazon Advertising Data Into
+            <span>Actionable Insights</span>
+        </h1>
+
+        <p class="hero-description">
+            We help Amazon advertisers connect advertising data,
+            build scalable cloud data pipelines, and transform
+            campaign performance data into actionable Power BI
+            dashboards and business insights.
+        </p>
+
+        <div class="hero-buttons">
+
+            <a href="#services" class="button">
+                Explore Our Services
+            </a>
+
+            <a href="#contact" class="button secondary-button">
+                Contact Us
+            </a>
+
+        </div>
+
+    </div>
 
 </section>
 
