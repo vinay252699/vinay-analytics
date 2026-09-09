@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Data Engineering & Power BI | Vinay Analytics</title>
+
+    <meta name="description"
+          content="Cloud data engineering, BigQuery, data pipelines and Power BI analytics solutions from Vinay Analytics.">
+
+    <style>
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #1f2937;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #111827;
+            color: white;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 25px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .hero {
+            background: #f3f4f6;
+            padding: 80px 8%;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 44px;
+            margin-bottom: 20px;
+            color: #111827;
+        }
+
+        .hero p {
+            max-width: 850px;
+            margin: auto;
+            font-size: 19px;
+            color: #4b5563;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            text-align: center;
+            font-size: 32px;
+            margin-bottom: 40px;
+            color: #111827;
+        }
+
+        .architecture {
+            max-width: 1100px;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .architecture-box {
+            padding: 20px 18px;
+            border: 1px solid #d1d5db;
+            border-radius: 8px;
+            background: white;
+            text-align: center;
+            min-width: 130px;
+            font-weight: bold;
+        }
+
+        .arrow {
+            font-size: 24px;
+            color: #2563eb;
+        }
+
+        .cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .card {
+            border: 1px solid #e5e7eb;
+            border-radius: 10px;
+            padding: 30px;
+            background: white;
+        }
+
+        .card h3 {
+            margin-bottom: 12px;
+            color: #111827;
+        }
+
+        .card p {
+            color: #6b7280;
+        }
+
+        .architecture-section {
+            background: #f9fafb;
+        }
+
+        .technology {
+            background: #f3f4f6;
+        }
+
+        .tech-list {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .tech {
+            background: white;
+            border: 1px solid #d1d5db;
+            padding: 10px 18px;
+            border-radius: 20px;
+        }
+
+        .contact {
+            background: #111827;
+            color: white;
+            text-align: center;
+        }
+
+        .contact a {
+            color: #93c5fd;
+        }
+
+        footer {
+            background: #030712;
+            color: #9ca3af;
+            text-align: center;
+            padding: 20px;
+        }
+
+        @media (max-width: 768px) {
+
+            .cards {
+                grid-template-columns: 1fr;
+            }
+
+            header {
+                flex-direction: column;
+                gap: 15px;
+            }
+
+            nav a {
+                margin: 0 8px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+
+            .arrow {
+                transform: rotate(90deg);
+            }
+
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class="logo">Vinay Analytics</div>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="amazon-ads.html">Amazon Ads</a>
+        <a href="data-engineering.html">Data Engineering</a>
+        <a href="index.html#contact">Contact</a>
+    </nav>
+
+</header>
+
+
+<section class="hero">
+
+    <h1>Data Engineering & Power BI</h1>
+
+    <p>
+        Build reliable data pipelines, scalable cloud data platforms
+        and actionable business intelligence solutions that turn
+        complex data into meaningful insights.
+    </p>
+
+</section>
+
+
+<section class="architecture-section">
+
+    <h2 class="section-title">
+        From Data Sources to Business Insights
+    </h2>
+
+    <div class="architecture">
+
+        <div class="architecture-box">
+            Amazon Ads<br>API
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="architecture-box">
+            Python<br>Ingestion
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="architecture-box">
+            Google Cloud<br>Storage
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="architecture-box">
+            BigQuery
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="architecture-box">
+            Data<br>Transformation
+        </div>
+
+        <div class="arrow">→</div>
+
+        <div class="architecture-box">
+            Power BI
+        </div>
+
+    </div>
+
+</section>
+
+
+<section>
+
+    <h2 class="section-title">
+        Our Data Engineering Services
+    </h2>
+
+    <div class="cards">
+
+        <div class="card">
+
+            <h3>Cloud Data Pipelines</h3>
+
+            <p>
+                Design and build automated pipelines for collecting,
+                processing and transforming data using cloud platforms.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>BigQuery Data Warehousing</h3>
+
+            <p>
+                Build analytical data models and centralized data
+                warehouses optimized for reporting and business
+                intelligence workloads.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Python Data Engineering</h3>
+
+            <p>
+                Develop Python-based ingestion and transformation
+                workflows for APIs, files and other data sources.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Data Modeling</h3>
+
+            <p>
+                Design reliable analytical models that provide
+                consistent business definitions and reusable metrics.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Power BI Dashboards</h3>
+
+            <p>
+                Build interactive dashboards that help business
+                teams monitor KPIs, trends and performance.
+            </p>
+
+        </div>
+
+
+        <div class="card">
+
+            <h3>Reporting Automation</h3>
+
+            <p>
+                Replace repetitive manual reporting with automated
+                data pipelines and dashboard refresh workflows.
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<section class="technology">
+
+    <h2 class="section-title">
+        Technology Stack
+    </h2>
+
+    <div class="tech-list">
+
+        <span class="tech">Python</span>
+        <span class="tech">SQL</span>
+        <span class="tech">Google Cloud</span>
+        <span class="tech">Cloud Storage</span>
+        <span class="tech">BigQuery</span>
+        <span class="tech">Power BI</span>
+        <span class="tech">Data Modeling</span>
+        <span class="tech">API Integration</span>
+        <span class="tech">ETL / ELT</span>
+
+    </div>
+
+</section>
+
+
+<section class="contact">
+
+    <h2>Let's Build Your Data Platform</h2>
+
+    <p>
+        Need help with data integration, cloud analytics
+        or business intelligence?
+    </p>
+
+    <p style="margin-top:15px;">
+
+        <a href="mailto:vinay.analytics.gcp@gmail.com">
+            vinay.analytics.gcp@gmail.com
+        </a>
+
+    </p>
+
+</section>
+
+
+<footer>
+
+    <p>
+        © 2026 Vinay Analytics. All rights reserved.
+    </p>
+
+    <p style="margin-top:8px;">
+
+        <a href="https://vinay252699.github.io/amazon-analytics-privacy/privacy.html"
+           style="color:#9ca3af;">
+            Privacy Policy
+        </a>
+
+    </p>
+
+</footer>
+
+</body>
+
+</html>
