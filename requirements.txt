@@ -1,0 +1,7 @@
+requests
+python-dotenv
+flask
+google-cloud-storage
+google-cloud-bigquery
+pandas
+google-cloud-secret-manager
