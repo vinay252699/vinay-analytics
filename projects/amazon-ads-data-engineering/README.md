@@ -440,3 +440,80 @@ BI integration
 
 Production-oriented pipeline design
 
+## SQL Transformation Framework
+
+All BigQuery transformation logic is version controlled under the `sql/` directory.
+
+### Transformation
+
+`sql/transform/01_campaign_performance.sql`
+
+Parses the nested Amazon Ads JSON payload using:
+
+- `JSON_VALUE`
+- `JSON_QUERY_ARRAY`
+- `UNNEST`
+- Explicit data type casting
+
+The resulting table has a grain of:
+
+**1 campaign × 1 day**
+
+### Analytics
+
+`sql/analytics/01_campaign_analytics.sql`
+
+Calculates advertising KPIs including:
+
+- CTR
+- CPC
+- CVR
+- ACOS
+- ROAS
+- Average Order Value
+- CPM
+
+`sql/analytics/02_campaign_summary.sql`
+
+Aggregates campaign performance across the reporting period.
+
+### Data Quality
+
+`sql/data_quality/01_data_quality_checks.sql`
+
+Validates:
+
+- NULL values
+- Duplicate campaign/day records
+- Negative metrics
+- Clicks greater than impressions
+
+## Project Structure
+
+```text
+amazon-ads-data-engineering/
+│
+├── data/
+│   └── sample/
+│       └── amazon_ads_sample_api.json
+│
+├── sql/
+│   ├── transform/
+│   │   └── 01_campaign_performance.sql
+│   │
+│   ├── analytics/
+│   │   ├── 01_campaign_analytics.sql
+│   │   └── 02_campaign_summary.sql
+│   │
+│   └── data_quality/
+│       └── 01_data_quality_checks.sql
+│
+├── src/
+│   ├── app.py
+│   ├── ingest_sample.py
+│   ├── load_raw_to_bigquery.py
+│   └── upload_to_gcs.py
+│
+├── Dockerfile
+├── requirements.txt
+└── README.md
